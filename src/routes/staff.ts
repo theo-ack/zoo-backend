@@ -15,7 +15,7 @@ staffRouter.get("/", async (c) => {
   } catch (error) {
     // Error handling
     console.error(error);
-    c.json({
+    return c.json({
       error: "Oh Snap! Something went wrong.",
     });
   }
