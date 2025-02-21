@@ -16,7 +16,7 @@ app.use(cors());
 app.route("/compounds", compoundRouter);
 app.route("/animals", animalRouter);
 app.route("/staff", staffRouter);
-app.route("account", zooRouter);
+app.route("zoo", zooRouter);
 
 app.get("/", async (c) => {
   return c.text("Hello Theo! 🔥");
